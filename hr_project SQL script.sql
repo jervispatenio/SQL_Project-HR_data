@@ -229,3 +229,37 @@ FROM hr
 WHERE termdate <> '0000-00-00' AND termdate <= CURDATE() AND age >= 18	
 GROUP BY department
 ORDER BY tenure_avg;
+
+
+
+
+-- SUMMARY
+
+-- Dataset is from the HR-EMPLOYEE information of a certain tech company in the US.
+
+-- - Database creation
+-- 	- CREATE DATABASE
+-- 	- USE
+-- - Loading .csv file table to MySQL database created
+
+-- Data Prepration/Cleaning/Transformation
+-- - Altering the table
+-- 	- CHANGE/MODIFY COLUMN
+-- 	- UPDATE table
+-- 	- Changed datatype and date formats
+
+
+-- DATA EXPLORATION
+-- Some insights taken:
+
+-- 1. Among the total number of employees of 18,285, 9328 were Male, 8455 were female and 502 Non-Conforming.
+
+-- 2. The most dominant race/ethnicity employed in the company is white at 5214 (or 28.5%)
+
+-- 3. Most employees (13710 or 75%) work in the headquarters in Ohio while the rest (4575 or 25%) work remotely.
+
+-- 4. Average length of employment in the company is about 7.5 years.
+
+-- 5. The position/jobtitle with highest number employed is Research Analyst II, followed by Business analyst.
+
+-- 6. The Department with highest turnover rate is Auditing Department at 15.38%.
